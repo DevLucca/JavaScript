@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+	<input id='teste' placeholder='Inserir Valor' value=''>Valor Sem desconto</input>
+	<button onclick='calcularValor()'>Calcular</button>
+	<h1 id='valorDesconto'></h1>
+	<script>
+	function calcularValor() {
+		let valor = document.getElementById('teste').value
+		valorDesconto = valor - (valor * 0.1)
+		document.getElementById('valorDesconto').innerHTML = valorDesconto
+	}
+	</script>
+</body>
+</html>
